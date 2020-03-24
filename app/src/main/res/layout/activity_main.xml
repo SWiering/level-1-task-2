@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_title"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/truthTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitle">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/truthTableLeft"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/a"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/truthTableRight"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/b"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/truthTableCombi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/a_b"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/firstRowLeft"
+                android:layout_height="wrap_content"
+                android:text="@string/value_true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/firstRowRight"
+                android:layout_height="wrap_content"
+                android:text="@string/value_true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/firstRowAnswer"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="1"
+                android:digits="@string/possibleValues"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/secondRowLeft"
+                android:layout_height="wrap_content"
+                android:text="@string/value_true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/secondRowRight"
+                android:layout_height="wrap_content"
+                android:text="@string/value_false"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/secondRowAnswer"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:digits="@string/possibleValues"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/thirdRowLeft"
+                android:layout_height="wrap_content"
+                android:text="@string/value_false"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/thirdRowRight"
+                android:layout_height="wrap_content"
+                android:text="@string/value_true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/thirdRowAnswer"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:digits="@string/possibleValues"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fourthRowLeft"
+                android:layout_height="wrap_content"
+                android:text="@string/value_false"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/fourthRowRight"
+                android:layout_height="wrap_content"
+                android:text="@string/value_false"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/fourthRowAnswer"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:digits="@string/possibleValues"
+                android:textAlignment="center" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="@+id/truthTable"
+        app:layout_constraintTop_toBottomOf="@+id/truthTable" />
+
+</android.support.constraint.ConstraintLayout>
